@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" width="1280" height="740">
+  <defs>
+    <linearGradient id="bgLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5fa" />
+      <stop offset="50%" stop-color="#f3e8ff" />
+      <stop offset="100%" stop-color="#eebefa" />
+    </linearGradient>
+
+    <linearGradient id="textGradLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d0006f" />
+      <stop offset="100%" stop-color="#7209b7" />
+    </linearGradient>
+
+    <clipPath id="bannerClipLight">
+      <rect width="1280" height="740" rx="24" ry="24" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes scanSweep { 0% { transform: translateY(-20px); } 100% { transform: translateY(760px); } }
+    @keyframes cycleRoleTextLight {
+      0%, 30% { content: "BS Artificial Intelligence Student 🎓"; }
+      33%, 63% { content: "Full-Stack Software Developer 💻"; }
+      66%, 96% { content: "C++ &amp; Graph Logic Specialist ⚡"; }
+    }
+
+    .title-light { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; font-size: 58px; fill: url(#textGradLight); }
+    .role-light::after { font-family: 'Fira Code', monospace; font-size: 20px; fill: #5a189a; animation: cycleRoleTextLight 12s infinite; content: "BS Artificial Intelligence Student 🎓"; }
+    .scan-line-light { animation: scanSweep 3.5s linear infinite; }
+  </style>
+
+  <g clip-path="url(#bannerClipLight)">
+    <rect width="1280" height="740" fill="url(#bgLight)" />
+
+    <rect x="60" y="38" width="1160" height="44" rx="10" fill="#ffffff" stroke="#d8b4fe" stroke-width="1.5" />
+    <circle cx="85" cy="60" r="6" fill="#ff5f56" /><circle cx="105" cy="60" r="6" fill="#ffbd2e" /><circle cx="125" cy="60" r="6" fill="#27c93f" />
+    <text x="150" y="66" font-family="monospace" font-size="18" fill="#7209b7">user@dev:~$ cat README.md</text>
+
+    <text x="60" y="150" class="title-light">Umaima Hameed</text>
+    <text x="60" y="192" class="role-light"></text>
+
+    <rect x="60" y="240" width="620" height="440" rx="16" fill="#ffffff" stroke="#c084fc" stroke-width="1.5" />
+    <rect x="60" y="240" width="620" height="36" rx="16" fill="#f3e8ff" />
+    <text x="85" y="263" font-family="monospace" font-size="13" fill="#7209b7">buildDreams.jsx</text>
+    
+    <g transform="translate(85, 310)" font-family="monospace" font-size="15" fill="#d0006f">
+      <text y="0">function buildDreams() {</text>
+      <text y="30" x="20">return <Developer name="Umaima" />;</text>
+      <text y="60">}</text>
+    </g>
+
+    <rect x="730" y="130" width="490" height="555" rx="20" fill="#ffffff" stroke="#c084fc" stroke-width="1.5" />
+    <circle cx="975" cy="340" r="130" fill="#f3e8ff" stroke="#d0006f" stroke-width="3" />
+
+    <line class="scan-line-light" x1="0" y1="0" x2="1280" y2="0" stroke="#d0006f" stroke-width="3" opacity="0.6" />
+  </g>
+</svg>
