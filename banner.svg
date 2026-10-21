@@ -7,12 +7,8 @@
     </linearGradient>
 
     <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff2a8d">
-        <animate attributeName="stop-color" values="#ff2a8d;#bd34fe;#00f5d4;#ff2a8d" dur="6s" repeatCount="indefinite" />
-      </stop>
-      <stop offset="100%" stop-color="#9d4edd">
-        <animate attributeName="stop-color" values="#9d4edd;#ff2a8d;#bd34fe;#9d4edd" dur="6s" repeatCount="indefinite" />
-      </stop>
+      <stop offset="0%" stop-color="#ff2a8d" />
+      <stop offset="100%" stop-color="#bd34fe" />
     </linearGradient>
 
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -86,9 +82,9 @@
     <text x="85" y="358" font-family="monospace" font-size="13" fill="#9d4edd">buildDreams.jsx</text>
 
     <g transform="translate(85, 395)" font-family="monospace" font-size="14">
-      <text y="20" fill="#ff2a8d">function <tspan fill="#00f5d4">buildDreams</tspan>() {</text>
-      <text y="52" x="20" fill="#e0aaff">const <tspan fill="#00f5d4">vision</tspan> = <tspan fill="#f72585">'AI and Smart Systems'</tspan>;</text>
-      <text y="84" x="20" fill="#e0aaff">return <<tspan fill="#00f5d4">Developer</tspan> <tspan fill="#bd34fe">name</tspan>=<tspan fill="#f72585">"Umaima"</tspan> />;</text>
+      <text y="20" fill="#ff2a8d">function buildDreams() {</text>
+      <text y="52" x="20" fill="#e0aaff">const vision = 'AI and Smart Systems';</text>
+      <text y="84" x="20" fill="#e0aaff">return <Developer name="Umaima" />;</text>
       <text y="116" fill="#ff2a8d">}</text>
       <text y="160" fill="#7b2cbf">// Status: Active Student and Developer 🚀</text>
       <text y="190" fill="#7b2cbf">// Location: SZABIST University, Karachi 📍</text>
