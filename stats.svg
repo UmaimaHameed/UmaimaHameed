@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <style>
+    @keyframes fillCircle { 0% { stroke-dashoffset: 280; } 100% { stroke-dashoffset: 40; } }
+    @keyframes slideRow { from { transform: translateX(-20px); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+    .bg { fill: #0d021a; stroke: #bd34fe; stroke-width: 1.5; rx: 16; }
+    .title { font-family: sans-serif; font-weight: bold; font-size: 18px; fill: #ff2a8d; }
+    .stat-label { font-family: sans-serif; font-size: 14px; fill: #e0aaff; }
+    .stat-val { font-family: monospace; font-weight: bold; font-size: 14px; fill: #00f5d4; }
+    .rank-circle { stroke-dasharray: 280; stroke-dashoffset: 40; animation: fillCircle 2s ease-out forwards; }
+    .row { animation: slideRow 1s ease-out forwards; }
+  </style>
+
+  <rect class="bg" width="450" height="200" />
+  <text x="30" y="40" class="title">⚡ GitHub Stats</text>
+
+  <g transform="translate(30, 70)">
+    <g class="row" style="animation-delay: 0.2s;"><text y="0" class="stat-label">Total Commits:</text><text x="180" y="0" class="stat-val">500+</text></g>
+    <g class="row" style="animation-delay: 0.4s;"><text y="30" class="stat-label">Pull Requests:</text><text x="180" y="30" class="stat-val">45</text></g>
+    <g class="row" style="animation-delay: 0.6s;"><text y="60" class="stat-label">Total Issues:</text><text x="180" y="60" class="stat-val">28</text></g>
+    <g class="row" style="animation-delay: 0.8s;"><text y="90" class="stat-label">Contributed To:</text><text x="180" y="90" class="stat-val">12 Repos</text></g>
+  </g>
+
+  <g transform="translate(350, 105)">
+    <circle cx="0" cy="0" r="45" fill="none" stroke="#2a0845" stroke-width="8" />
+    <circle class="rank-circle" cx="0" cy="0" r="45" fill="none" stroke="#ff2a8d" stroke-width="8" transform="rotate(-90)" />
+    <text x="0" y="8" font-family="sans-serif" font-weight="900" font-size="26" fill="#00f5d4" text-anchor="middle">A+</text>
+  </g>
+</svg>
