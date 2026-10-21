@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <style>
+    @keyframes trophyPop { 0% { transform: scale(0.7); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+    .bg { fill: #0d021a; stroke: #00f5d4; stroke-width: 1.5; rx: 16; }
+    .title { font-family: sans-serif; font-weight: bold; font-size: 18px; fill: #e0aaff; }
+    .trophy-card { fill: #1c0638; stroke: #bd34fe; stroke-width: 1; rx: 10; animation: trophyPop 0.8s ease-out forwards; }
+    .t-title { font-family: sans-serif; font-size: 12px; font-weight: bold; fill: #ffffff; }
+  </style>
+
+  <rect class="bg" width="450" height="200" />
+  <text x="30" y="40" class="title">🏆 Achievements</text>
+
+  <g transform="translate(25, 65)">
+    <g style="animation-delay: 0.2s;"><rect class="trophy-card" x="0" y="0" width="120" height="100" /><text x="60" y="45" font-size="30" text-anchor="middle">🥇</text><text x="60" y="75" class="t-title" text-anchor="middle">Master Coder</text></g>
+    <g style="animation-delay: 0.4s;"><rect class="trophy-card" x="140" y="0" width="120" height="100" /><text x="200" y="45" font-size="30" text-anchor="middle">🚀</text><text x="200" y="75" class="t-title" text-anchor="middle">Repo Builder</text></g>
+    <g style="animation-delay: 0.6s;"><rect class="trophy-card" x="280" y="0" width="120" height="100" /><text x="340" y="45" font-size="30" text-anchor="middle">⚡</text><text x="340" y="75" class="t-title" text-anchor="middle">Streak Master</text></g>
+  </g>
+</svg>
