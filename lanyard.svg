@@ -6,19 +6,14 @@
     </linearGradient>
 
     <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.22)" />
-      <stop offset="100%" stop-color="rgba(15, 4, 28, 0.90)" />
+      <stop offset="0%" stop-color="#2a0845" />
+      <stop offset="100%" stop-color="#0f041c" />
     </linearGradient>
 
-    <linearGradient id="shineSweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent" />
-      <stop offset="50%" stop-color="rgba(255, 255, 255, 0.35)" />
-      <stop offset="100%" stop-color="transparent" />
+    <linearGradient id="shineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a8d" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00f5d4" stop-opacity="0.1" />
     </linearGradient>
-
-    <filter id="badgeShadow">
-      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#000000" flood-opacity="0.6" />
-    </filter>
 
     <clipPath id="cardClip">
       <rect width="280" height="360" rx="20" />
@@ -26,56 +21,50 @@
   </defs>
 
   <style>
-    @keyframes dropAndSway {
-      0% { transform: rotate(-22deg) translateY(-80px); opacity: 0; }
-      20% { transform: rotate(16deg) translateY(0px); opacity: 1; }
-      40% { transform: rotate(-10deg); }
-      60% { transform: rotate(6deg); }
-      80% { transform: rotate(-3deg); }
-      100% { transform: rotate(-3deg); }
-    }
-
     @keyframes continuousSway {
-      0%, 100% { transform: rotate(-3deg); }
-      50% { transform: rotate(3deg); }
+      0%, 100% { transform: rotate(-4deg); }
+      50% { transform: rotate(4deg); }
     }
-
     @keyframes shineMove {
       0% { transform: translateX(-300px) rotate(25deg); }
       100% { transform: translateX(400px) rotate(25deg); }
     }
-
     .lanyard-wrapper {
       transform-origin: 200px 0px;
-      animation: dropAndSway 2.5s cubic-bezier(0.25, 1, 0.5, 1) forwards, continuousSway 5s ease-in-out 2.5s infinite;
+      animation: continuousSway 4s ease-in-out infinite;
     }
-
-    .badge-card { fill: url(#glassGrad); stroke: #ff2a8d; stroke-width: 1.5; filter: url(#badgeShadow); }
-    .shine-bar { animation: shineMove 3.5s infinite ease-in-out; }
+    .badge-card { fill: url(#glassGrad); stroke: #ff2a8d; stroke-width: 1.5; }
+    .shine-bar { animation: shineMove 3.5s infinite linear; }
   </style>
 
   <g class="lanyard-wrapper">
+    <!-- Strap -->
     <rect x="185" y="0" width="30" height="135" fill="url(#strapGrad)" rx="4" />
-    <text x="200" y="68" font-family="&#39;Segoe UI&#39;, sans-serif" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle" transform="rotate(-90 200 68)" letter-spacing="1.5">UMAIMA HAMEED • BS AI</text>
+    <text x="200" y="68" font-family="sans-serif" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle" transform="rotate(-90 200 68)" letter-spacing="1">UMAIMA HAMEED • BS AI</text>
 
+    <!-- Metal Clasp & Ring -->
     <rect x="180" y="130" width="40" height="14" rx="3" fill="#d1d5db" />
     <circle cx="200" cy="152" r="10" fill="none" stroke="#9ca3af" stroke-width="4" />
 
+    <!-- Glass Card -->
     <g transform="translate(60, 165)">
       <rect class="badge-card" width="280" height="360" rx="20" />
 
       <g clip-path="url(#cardClip)">
-        <rect class="shine-bar" x="0" y="0" width="120" height="400" fill="url(#shineSweepGrad)" />
+        <rect class="shine-bar" x="0" y="0" width="120" height="400" fill="url(#shineGrad)" />
       </g>
 
+      <!-- Avatar Ring -->
       <circle cx="140" cy="105" r="55" fill="#1a0833" stroke="#00f5d4" stroke-width="3" />
       <circle cx="140" cy="90" r="22" fill="#ff2a8d" />
       <path d="M 105,140 Q 140,110 175,140 Z" fill="#ff2a8d" />
 
-      <text x="140" y="195" font-family="&#39;Segoe UI&#39;, sans-serif" font-weight="bold" font-size="22" fill="#ffffff" text-anchor="middle">Umaima Hameed</text>
-      <text x="140" y="220" font-family="&#39;Fira Code&#39;, monospace" font-size="13" fill="#00f5d4" text-anchor="middle">@little.but.dev</text>
+      <!-- Text -->
+      <text x="140" y="195" font-family="sans-serif" font-weight="bold" font-size="22" fill="#ffffff" text-anchor="middle">Umaima Hameed</text>
+      <text x="140" y="220" font-family="monospace" font-size="13" fill="#00f5d4" text-anchor="middle">@little.but.dev</text>
       <text x="140" y="245" font-family="sans-serif" font-size="12" fill="#e0aaff" text-anchor="middle">Full-Stack & AI Developer</text>
 
+      <!-- Barcode -->
       <g transform="translate(65, 275)" fill="#ff2a8d">
         <rect x="0" width="3" height="32" /><rect x="6" width="6" height="32" /><rect x="16" width="2" height="32" />
         <rect x="22" width="8" height="32" /><rect x="34" width="4" height="32" /><rect x="42" width="2" height="32" />
