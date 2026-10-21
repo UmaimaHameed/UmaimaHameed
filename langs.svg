@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 200" width="450" height="200">
+  <style>
+    @keyframes barGrow { from { width: 0; } }
+    .bg { fill: #0d021a; stroke: #ff2a8d; stroke-width: 1.5; rx: 16; }
+    .title { font-family: sans-serif; font-weight: bold; font-size: 18px; fill: #00f5d4; }
+    .lang-name { font-family: sans-serif; font-size: 13px; fill: #ffffff; }
+    .bar { animation: barGrow 1.5s ease-out forwards; height: 10px; rx: 5; }
+  </style>
+
+  <rect class="bg" width="450" height="200" />
+  <text x="30" y="40" class="title">🛠️ Top Languages</text>
+
+  <g transform="translate(30, 65)">
+    <text y="0" class="lang-name">Python (40%)</text>
+    <rect y="10" width="380" height="10" fill="#2a0845" rx="5" />
+    <rect class="bar" y="10" width="152" fill="#ff2a8d" />
+
+    <text y="40" class="lang-name">C++ (30%)</text>
+    <rect y="50" width="380" height="10" fill="#2a0845" rx="5" />
+    <rect class="bar" y="50" width="114" fill="#9d4edd" />
+
+    <text y="80" class="lang-name">PHP / Web (20%)</text>
+    <rect y="90" width="380" height="10" fill="#2a0845" rx="5" />
+    <rect class="bar" y="90" width="76" fill="#00f5d4" />
+  </g>
+</svg>
