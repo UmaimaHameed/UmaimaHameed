@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 740" width="1280" height="740">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c021a" />
+      <stop offset="50%" stop-color="#1a0633" />
+      <stop offset="100%" stop-color="#070112" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff2a8d">
+        <animate attributeName="stop-color" values="#ff2a8d;#bd34fe;#00f5d4;#ff2a8d" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#9d4edd">
+        <animate attributeName="stop-color" values="#9d4edd;#ff2a8d;#bd34fe;#9d4edd" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(35, 12, 60, 0.85)" />
+      <stop offset="100%" stop-color="rgba(15, 4, 28, 0.95)" />
+    </linearGradient>
+
+    <linearGradient id="holoShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0, 245, 212, 0.4)" />
+      <stop offset="50%" stop-color="rgba(255, 42, 141, 0.4)" />
+      <stop offset="100%" stop-color="rgba(189, 52, 254, 0.1)" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <clipPath id="bannerClip">
+      <rect width="1280" height="740" rx="24" ry="24" />
+    </clipPath>
+
+    <clipPath id="avatarClip">
+      <circle cx="975" cy="340" r="130" />
+    </clipPath>
+  </defs>
+
+  <style>
+    @keyframes cursorBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) scale(0.8); opacity: 0.3; }
+      50% { transform: translateY(-30px) scale(1.1); opacity: 0.9; }
+      100% { transform: translateY(0px) scale(0.8); opacity: 0.3; }
+    }
+    @keyframes sparkleTwinkle {
+      0%, 100% { transform: scale(0.5) rotate(0deg); opacity: 0.2; }
+      50% { transform: scale(1.3) rotate(90deg); opacity: 1; filter: drop-shadow(0 0 6px #00f5d4); }
+    }
+    @keyframes heartFloat {
+      0% { transform: translateY(0px) scale(0.9); opacity: 0.3; }
+      50% { transform: translateY(-20px) scale(1.1); opacity: 0.85; }
+      100% { transform: translateY(0px) scale(0.9); opacity: 0.3; }
+    }
+    @keyframes cycleRoleText {
+      0%, 30% { content: "BS Artificial Intelligence Student 🎓"; }
+      33%, 63% { content: "Full-Stack Software Developer 💻"; }
+      66%, 96% { content: "C++ &amp; Graph Logic Specialist ⚡"; }
+    }
+    @keyframes typeLine1 { 0%, 10% { width: 0; } 30%, 100% { width: 500px; } }
+    @keyframes typeLine2 { 0%, 35% { width: 0; } 55%, 100% { width: 500px; } }
+    @keyframes typeLine3 { 0%, 60% { width: 0; } 80%, 100% { width: 500px; } }
+    @keyframes typeLine4 { 0%, 82% { width: 0; } 95%, 100% { width: 500px; } }
+    @keyframes scanSweep { 0% { transform: translateY(-20px); } 100% { transform: translateY(760px); } }
+    @keyframes neonFlicker {
+      0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px #ff2a8d); }
+      91% { opacity: 1; } 92% { opacity: 0.3; } 93% { opacity: 1; } 95% { opacity: 0.4; } 96% { opacity: 1; }
+    }
+
+    .pill { transition: transform 0.3s ease, fill 0.3s ease; fill: #2a0845; stroke: #ff2a8d; stroke-width: 1.5; rx: 14; }
+    .pill:hover { fill: #ff2a8d; cursor: pointer; transform: translateY(-3px); }
+    .terminal-text { font-family: 'Fira Code', monospace; fill: #00f5d4; font-size: 18px; }
+    .cursor { animation: cursorBlink 1s infinite; fill: #ff2a8d; }
+    .title-path { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 900; font-size: 58px; fill: url(#textGrad); }
+    .role-dynamic::after { font-family: 'Fira Code', monospace; font-size: 20px; fill: #e0aaff; animation: cycleRoleText 12s infinite; content: "BS Artificial Intelligence Student 🎓"; }
+    .tagline-text { font-family: 'Georgia', serif; font-style: italic; font-size: 16px; fill: #f72585; }
+    .neon-sign { font-family: 'Impact', sans-serif; font-size: 21px; fill: #ff2a8d; animation: neonFlicker 3.5s infinite; letter-spacing: 2px; }
+    .scan-line { animation: scanSweep 3.5s linear infinite; }
+    .sparkle { animation: sparkleTwinkle 3s infinite ease-in-out; transform-origin: center; }
+    .heart { animation: heartFloat 4s infinite ease-in-out; }
+    .particle { animation: floatParticle 5s infinite ease-in-out; }
+    .type-container { overflow: hidden; white-space: nowrap; display: inline-block; }
+    .line-1 { animation: typeLine1 8s infinite; }
+    .line-2 { animation: typeLine2 8s infinite; }
+    .line-3 { animation: typeLine3 8s infinite; }
+    .line-4 { animation: typeLine4 8s infinite; }
+  </style>
+
+  <g clip-path="url(#bannerClip)">
+    <rect width="1280" height="740" fill="url(#bgGrad)" />
+    <circle cx="180" cy="160" r="200" fill="#ff2a8d" filter="url(#glow)" opacity="0.22" />
+    <circle cx="1120" cy="580" r="240" fill="#bd34fe" filter="url(#glow)" opacity="0.22" />
+
+    <path class="sparkle" style="animation-delay: 0s;" transform="translate(180, 110)" fill="#00f5d4" d="M0,-12 L3,-3 L12,0 L3,3 L0,12 L-3,3 L-12,0 L-3,-3 Z" />
+    <path class="sparkle" style="animation-delay: 1.2s;" transform="translate(640, 90)" fill="#ff2a8d" d="M0,-10 L2.5,-2.5 L10,0 L2.5,2.5 L0,10 L-2.5,2.5 L-10,0 L-2.5,-2.5 Z" />
+    <path class="sparkle" style="animation-delay: 2.1s;" transform="translate(1180, 200)" fill="#bd34fe" d="M0,-14 L3.5,-3.5 L14,0 L3.5,3.5 L0,14 L-3.5,3.5 L-14,0 L-3.5,-3.5 Z" />
+
+    <path class="heart" style="animation-delay: 0.5s;" transform="translate(650, 230)" fill="#ff2a8d" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    <circle class="particle" cx="120" cy="520" r="4" fill="#00f5d4" />
+    <circle class="particle" cx="420" cy="680" r="5" fill="#ff2a8d" style="animation-delay: 1.5s;" />
+
+    <rect x="60" y="38" width="1160" height="44" rx="10" fill="#120424" stroke="#3c096c" stroke-width="1.5" />
+    <circle cx="85" cy="60" r="6" fill="#ff5f56" />
+    <circle cx="105" cy="60" r="6" fill="#ffbd2e" />
+    <circle cx="125" cy="60" r="6" fill="#27c93f" />
+    <text x="150" y="66" class="terminal-text">user@dev:~$ cat README.md</text>
+    <rect class="cursor" x="420" y="50" width="10" height="20" />
+
+    <text x="60" y="150" class="title-path">Umaima Hameed</text>
+    <text x="60" y="192" class="role-dynamic"></text>
+
+    <rect x="60" y="215" width="620" height="46" rx="12" fill="url(#cardBg)" stroke="#ff2a8d" stroke-width="1.2" />
+    <text x="80" y="244" class="tagline-text">"Turning logic into intelligent code & creative solutions."</text>
+
+    <g transform="translate(60, 280)">
+      <g transform="translate(0,0)"><rect class="pill" width="90" height="32" /><text x="45" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Python</text></g>
+      <g transform="translate(100,0)"><rect class="pill" width="80" height="32" /><text x="40" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">C++</text></g>
+      <g transform="translate(190,0)"><rect class="pill" width="80" height="32" /><text x="40" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">PHP</text></g>
+      <g transform="translate(280,0)"><rect class="pill" width="90" height="32" /><text x="45" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Flutter</text></g>
+      <g transform="translate(380,0)"><rect class="pill" width="80" height="32" /><text x="40" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">MySQL</text></g>
+      <g transform="translate(470,0)"><rect class="pill" width="80" height="32" /><text x="40" y="20" fill="#fff" font-family="sans-serif" font-size="13" font-weight="600" text-anchor="middle">Godot</text></g>
+    </g>
+
+    <rect x="60" y="335" width="620" height="350" rx="16" fill="#0f031e" stroke="#5a189a" stroke-width="1.5" />
+    <rect x="60" y="335" width="620" height="36" rx="16" fill="#1d0636" />
+    <text x="85" y="358" font-family="monospace" font-size="13" fill="#9d4edd">buildDreams.jsx</text>
+
+    <g transform="translate(85, 395)" font-family="&#39;Fira Code&#39;, monospace" font-size="14">
+      <svg width="500" height="25" class="type-container line-1"><text y="18" fill="#ff2a8d">function <tspan fill="#00f5d4">buildDreams</tspan>() {</text></svg>
+      <g transform="translate(20,32)"><svg width="500" height="25" class="type-container line-2"><text y="18" fill="#e0aaff">const <tspan fill="#00f5d4">vision</tspan> = <tspan fill="#f72585">'AI & Smart Systems'</tspan>;</text></svg></g>
+      <g transform="translate(20,64)"><svg width="500" height="25" class="type-container line-3"><text y="18" fill="#e0aaff">return <<tspan fill="#00f5d4">Developer</tspan> <tspan fill="#bd34fe">name</tspan>=<tspan fill="#f72585">"Umaima"</tspan> />;</text></svg></g>
+      <g transform="translate(0,96)"><svg width="500" height="25" class="type-container line-4"><text y="18" fill="#ff2a8d">}</text></svg></g>
+      <text y="160" fill="#7b2cbf">// Status: Active Student & Developer 🚀</text>
+      <text y="190" fill="#7b2cbf">// Location: SZABIST University, Karachi 📍</text>
+      <text y="220" fill="#7b2cbf">// Contact: umaimahameed.dev@gmail.com ✉️</text>
+    </g>
+
+    <rect x="730" y="130" width="490" height="555" rx="20" fill="url(#cardBg)" stroke="#7b2cbf" stroke-width="1.5" />
+    <rect x="730" y="130" width="490" height="555" rx="20" fill="url(#holoShine)" opacity="0.6" />
+
+    <circle cx="975" cy="340" r="130" fill="#1a0833" stroke="#ff2a8d" stroke-width="3" filter="url(#glow)" />
+    <g clip-path="url(#avatarClip)">
+      <circle cx="975" cy="310" r="55" fill="#3c096c" />
+      <path d="M 885,430 Q 975,360 1065,430 Z" fill="#3c096c" />
+      <line x1="840" y1="200" x2="1110" y2="200" stroke="#00f5d4" stroke-width="2" opacity="0.7">
+        <animate attributeName="y1" values="200;480;200" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="y2" values="200;480;200" dur="4s" repeatCount="indefinite" />
+      </line>
+    </g>
+
+    <rect x="765" y="535" width="420" height="65" rx="14" fill="#120221" stroke="#ff2a8d" stroke-width="1.5" />
+    <text x="975" y="574" text-anchor="middle" class="neon-sign">✦ KEEP CODING KEEP GROWING ✦</text>
+
+    <line class="scan-line" x1="0" y1="0" x2="1280" y2="0" stroke="#00f5d4" stroke-width="3.5" filter="url(#glow)" />
+  </g>
+</svg>
