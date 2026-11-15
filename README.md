@@ -31,7 +31,7 @@
 - 🛠️ Building projects with **Python, C++, PHP, Flutter, and MySQL**.
 - 💡 Interested in **Data Structures, Graph Algorithms, and Machine Learning**.
 - 🎯 Current Project: **Smart Water Distribution System (Dijkstra's Algorithm in C++)**.
-- 📫 Reach Me: `umaimahameed.dev@gmail.com`
+- 📫 Reach Me: `bsai25108143@szabist.pk`
 
 ---
 
