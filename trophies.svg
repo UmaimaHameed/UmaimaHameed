@@ -11,8 +11,8 @@
   <text x="30" y="40" class="title">🏆 Achievements</text>
 
   <g transform="translate(25, 65)">
-    <g style="animation-delay: 0.2s;"><rect class="trophy-card" x="0" y="0" width="120" height="100" /><text x="60" y="45" font-size="30" text-anchor="middle">🥇</text><text x="60" y="75" class="t-title" text-anchor="middle">Master Coder</text></g>
-    <g style="animation-delay: 0.4s;"><rect class="trophy-card" x="140" y="0" width="120" height="100" /><text x="200" y="45" font-size="30" text-anchor="middle">🚀</text><text x="200" y="75" class="t-title" text-anchor="middle">Repo Builder</text></g>
-    <g style="animation-delay: 0.6s;"><rect class="trophy-card" x="280" y="0" width="120" height="100" /><text x="340" y="45" font-size="30" text-anchor="middle">⚡</text><text x="340" y="75" class="t-title" text-anchor="middle">Streak Master</text></g>
+    <g style="animation-delay: 0.2s;"><rect class="trophy-card" x="0" y="0" width="120" height="100" /><text x="60" y="45" font-size="30" text-anchor="middle">🥇</text><text x="60" y="75" class="t-title" text-anchor="middle">Python Girl</text></g>
+    <g style="animation-delay: 0.4s;"><rect class="trophy-card" x="140" y="0" width="120" height="100" /><text x="200" y="45" font-size="30" text-anchor="middle">🚀</text><text x="200" y="75" class="t-title" text-anchor="middle">AI Explorer</text></g>
+    <g style="animation-delay: 0.6s;"><rect class="trophy-card" x="280" y="0" width="120" height="100" /><text x="340" y="45" font-size="30" text-anchor="middle">⚡</text><text x="340" y="75" class="t-title" text-anchor="middle">while True: learn()</text></g>
   </g>
 </svg>
