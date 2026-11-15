@@ -65,8 +65,8 @@
     <text x="60" y="150" class="title-path">Umaima Hameed</text>
     <text x="60" y="192" class="role-text">🚀 BS Artificial Intelligence Student and Developer</text>
 
-    <a href="https://linkedin.com/in/tumhara-link" target="_blank">
-      <text class="tagline-text">linkedin.com/in/tumhara-link</text>
+    <a href="https://www.linkedin.com/in/umaima-hameed-24817a36b" target="_blank">
+     <text x="60" y="210" class="tagline-text">linkedin.com/in/umaima-hameed</text>
     </a>
 
     <rect x="60" y="215" width="620" height="46" rx="12" fill="url(#cardBg)" stroke="#ff2a8d" stroke-width="1.2" />
