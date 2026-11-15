@@ -59,11 +59,15 @@
     <circle cx="85" cy="60" r="6" fill="#ff5f56" />
     <circle cx="105" cy="60" r="6" fill="#ffbd2e" />
     <circle cx="125" cy="60" r="6" fill="#27c93f" />
-    <text x="150" y="66" class="terminal-text">user@dev:~$ cat README.md</text>
+    <text x="150" y="66" class="terminal-text">umaima@dev:~$ cat README.md</text>
     <rect class="cursor" x="420" y="50" width="10" height="20" />
 
     <text x="60" y="150" class="title-path">Umaima Hameed</text>
     <text x="60" y="192" class="role-text">🚀 BS Artificial Intelligence Student and Developer</text>
+
+    <a href="https://linkedin.com/in/tumhara-link" target="_blank">
+      <text class="tagline-text">linkedin.com/in/tumhara-link</text>
+    </a>
 
     <rect x="60" y="215" width="620" height="46" rx="12" fill="url(#cardBg)" stroke="#ff2a8d" stroke-width="1.2" />
     <text x="80" y="244" class="tagline-text">"Turning logic into intelligent code and creative solutions."</text>
