@@ -84,7 +84,8 @@
 
 <div align="center">
   <p><b>Connect with me:</b></p>
-  <a href="https://instagram.com/little.but.dev"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
+  <a href="https://www.linkedin.com/in/umaimahameed" target="_blank"><img src="https://img.shields.io/badge/LINKEDIN-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  
   <a href="https://github.com/UmaimaHameed"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
   
   <br><br>
